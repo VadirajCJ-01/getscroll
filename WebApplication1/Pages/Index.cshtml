@@ -4,9 +4,12 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
+<div class="card justify-content-center">
     <form method="POST">
-        <button type="submit" asp-route-data="foo" asp-page-handler="GetData">GetData</button>
-        <label asp-for="ScrollText">@Model.ScrollText</label>
+        <button type="submit" class="btn btn-primary justify-content-center" asp-route-data="foo" asp-page-handler="GetData">Connect to Blob</button>
+        <div class="card-body">
+            <label asp-for="ScrollText">@Model.ScrollText</label>
+        </div>
+        
     </form>
 </div>
